@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background: #808080;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+  
+}
+.main div {
+    height: 200px;
+    width: 200px;
+}
+.div1{
+
+     background-color: rebeccapurple;
+ }
+ 
+ .div2{
+     
+     background-color: rosybrown;
+ }
+ 
+ .div3{
+    
+     background-color: salmon;
+ }
+ 
+ .div4{
+     
+     background-color: seagreen;
+ }

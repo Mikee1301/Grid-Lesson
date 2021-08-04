@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background: #808080;
+
+    /* Grid */
+    display: grid;
+    /* Accomulate what size you set and create room for no div */
+    grid-template-columns: repeat(auto-fill, 50px);
+    
+    
+   
+}
+
+.div1{
+     background-color: rebeccapurple;
+ }
+ 
+ .div2{
+
+     background-color: rosybrown;
+ }
+ 
+ .div3{
+
+     background-color: salmon;
+ }
+ 
+ .div4{
+     background-color: seagreen;
+ }

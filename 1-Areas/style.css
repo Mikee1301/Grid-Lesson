@@ -1,0 +1,38 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    background: #808080;
+
+    /* Grid */
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header"
+    "Sidebar Main Main"
+    "Footer Footer Footer";
+
+    grid-template-columns: 250px  1fr 1fr;
+    grid-template-rows: 60px 1fr 50px;
+
+}
+.div1{
+    grid-area: Header;
+    background-color: rosybrown;
+}
+.div2{
+    grid-area: Sidebar;
+    background-color: saddlebrown;
+}
+.div3{
+    grid-area: Main;
+    background-color: sandybrown;
+}
+.div4{
+    grid-area: Footer;
+    background-color: sienna;
+}
+
+

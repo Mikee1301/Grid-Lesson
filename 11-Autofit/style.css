@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background: #808080;
+
+    /* Grid */
+    display: grid;
+    /* Accomulate extact size weather it is accoupy the whole screen */
+   grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    
+    
+   
+}
+
+.div1{
+     background-color: rebeccapurple;
+ }
+ 
+ .div2{
+
+     background-color: rosybrown;
+ }
+ 
+ .div3{
+
+     background-color: salmon;
+ }
+ 
+ .div4{
+     background-color: seagreen;
+ }
