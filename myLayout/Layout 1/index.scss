@@ -1,0 +1,61 @@
+body,html {
+    padding: 0;
+    margin: 0; 
+    background-color: 	#c0c5ce;
+}
+
+.main {
+    height: 95vh;
+    width: 95%;
+    margin: 15px auto;
+    
+
+    // Grid
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "nav nav"
+    "header header"
+    "sidebar bodyarea"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 50px 100px 1fr 50px;
+    grid-gap: 10px;
+
+    // Boxes {
+    div{
+        background:	#a7adba;
+        text-transform: capitalize;
+        font-weight: bolder;
+
+        // Flex layout
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div:nth-child(1){
+        
+        grid-area: logo ;
+    }
+    div:nth-child(2){
+        grid-area: nav;
+        
+    }
+    div:nth-child(3){
+        grid-area: header;
+        
+    }
+    div:nth-child(4){
+        grid-area: sidebar;
+        
+    }
+    div:nth-child(5){
+        grid-area: bodyarea;
+        
+    }
+    div:nth-child(6){
+        grid-area: footer;
+        
+    }
+}
+
