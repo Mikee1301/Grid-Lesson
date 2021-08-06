@@ -1,0 +1,128 @@
+html,body{
+    margin: 0;
+    padding: 0;
+
+    background-color: 	#c0c5ce;
+}
+
+.main{
+    height: 95vh;
+    width: 95%;
+    margin: 10px auto;
+
+
+    // Grid
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 100px 60px 1fr 30px ;
+    grid-gap: 10px;
+    div{
+        background:	#a7adba;
+        text-transform: capitalize;
+        font-weight: bolder;
+        
+        // Flexbox
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:nth-child(1){
+        grid-column: 1/4;
+        grid-row: 1/2;
+        justify-content: space-around;
+        
+        .logo{
+            width: 50%;
+
+            // Flexbox
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 100px;
+           
+            
+        }
+        .nav{
+            width: 50%;
+
+            // Flexbox
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 100px;
+        }
+    }
+    div:nth-child(2){
+        grid-column: 1/4;
+        grid-row: 2/3;
+        
+    }
+    div:nth-child(3){
+        grid-column: 1/4;
+        grid-row: 3/4;
+
+    }
+    div:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    div:nth-child(5){
+        grid-column: 2/3;
+        grid-row: 4/5;
+
+    }
+    div:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 4/5;
+
+    }
+    div:nth-child(7){
+        grid-column: 1/4;
+        grid-row: 5/6;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+   .main {
+    height: 200vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 100px 60px 1fr 1fr 1fr 30px ;
+    div:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    div:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+    div:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+    div:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    div:nth-child(5){
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+    }
+    div:nth-child(6){
+        grid-column: 1/2;
+        grid-row: 6/7;
+
+    }
+    div:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 7/8;
+
+    }
+   }
+  }
+
+
